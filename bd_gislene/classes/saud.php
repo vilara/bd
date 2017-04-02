@@ -1,0 +1,5 @@
+<?php
+$saudacao new Saudacao();
+
+
+?>

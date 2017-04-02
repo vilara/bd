@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Incrições</title>
+  <style type="text/css">
+  html, body {margin: 0; padding: 0; font: 85% arial, hevetica, sans-serif; color: #505367; background-color: #fff;}
+  #geral{ margin: 0; padding: 0;}
+  #form { margin: 10px auto; padding: 0; border: 1px solid #ccc; width: 700px;}
+  #form h3 {font-weight: bold; font-size: 100%; text-align: center; color: #990000; margin-top: 5px; text-decoration: underline;}
+  #form h4 {font-weight: bold; font-size: 100%; margin-top: 5px; text-decoration: underline; margin: 20px;}
+  #form fieldset {border:none; margin-left:20px;}
+  #form label { margin: 0; padding: 0; display:  block; margin-top: 15px; color: #222222; font-family:  Arial; color: #555555; }
+  .formu { margin: 0; padding: 1px; border: 1px solid #999; background: #E8E8E8; font-size: 11px; font-family:  Arial; margin-top: 4px;}
+  input#enviar { width: 75px; height: 18px; display: block; border:  1px solid #999; margin: 0 auto; margin-top: 20px; color: #505367;}
+  #form .sb { margin: 0; padding: 1px; font-size: 11px; font-family:  Arial; margin-top: 4px;}
+
+  </style>
+</head>
+
+<body>
+<div id="gerl">
+<div id="form">
+<h3>Inscrições para a Jornada Amazonense de Educação a Distância </h3>
+<!--<form id="forms" method="post" action="formulario.htm?flag=1" enctype="multipart/form-data">
+<fieldset>
+
+    <label for="nome">
+    1) Nome completo *
+    </label>
+    <input name="nome" type="text" id="nome" tabindex="1" accesskey="n" size="55" class="formu" />
+
+    <label for="cpf">
+    2) CPF *
+    </label>
+    <input name="cpf" type="text" id="cpf" tabindex="2" accesskey="c" size="10" class="formu"  />
+
+    <label for="idt">
+    3) Documento de Idt *
+    </label>
+    <input name="idt" type="text" id="idt" tabindex="3" accesskey="i" size="10" class="formu"  />&nbsp;&nbsp;Tipo&nbsp;
+    <input name="tipo" type="text" id="tipo" tabindex="4" accesskey="t" size="10" class="formu"  />
+
+    <label for="fa">
+    4) Formação acadêmica *
+    </label>
+    <input name="fa" type="text" id="fa" tabindex="5" accesskey="f" size="25" class="formu"  />
+
+    <label for="emp">
+    5) Nome empresa / Instituição *
+    </label>
+    <input name="emp" type="text" id="emp" tabindex="6" accesskey="e" size="45" class="formu"  />
+
+    <label for="fant">
+    6) Nome fantasia *
+    </label>
+    <input name="fant" type="text" id="fant" tabindex="7" accesskey="fa" size="45" class="formu"  />(Nome para identificar sua empresa no Crachá)
+
+    <label for="cnpj">
+    7) CNPJ *
+    </label>
+    <input name="cnpj" type="text" id="cnpj" tabindex="8" accesskey="c" size="10" class="formu"  />
+
+    <label for="ramo">
+    8) Ramo de atividade *
+    </label>
+    <input name="ramo" type="text" id="ramo" tabindex="9" accesskey="r" size="35" class="formu"  />
+
+    <label for="dep">
+    9) Departamento *
+    </label>
+    <input name="dep" type="text" id="dep" tabindex="10" accesskey="d" size="25" class="formu"  />
+
+    <label for="cargo">
+    10) Cargo *
+    </label>
+    <input name="cargo" type="text" id="cargo" tabindex="11" accesskey="ca" size="25" class="formu"  />
+
+    <label for="set">
+    11) Setor *
+    </label>
+    <input name="set" type="text" id="set" tabindex="12" accesskey="s" size="25" class="formu"  />
+
+    <label for="int">
+    12) Área de interesse *
+    </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="int1" value="1">Educação média e fundamental<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="int2" value="2">Educação tecnológica / profissionalizante<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="int3" value="3">Educação Universitária<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="int4" value="4">Educação corporativa<br />
+
+<h4>Informações para correspondência</h4>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="com" value="Comercial" class="sb">Comercial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="com" value="Residencial" class="sb">Residencial<br />
+
+    <label for="end">
+    13) Endereço *
+    </label>
+    <input name="end" type="text" id="set" tabindex="13" accesskey="e" size="35" class="formu"  />
+
+    <label for="nr">
+    14) Número *
+    </label>
+    <input name="nr" type="text" id="nr" tabindex="14" accesskey="s" size="25" class="formu"  />
+
+
+    <label for="comp">
+    15) Complemento *
+    </label>
+    <input name="comp" type="text" id="comp" tabindex="15" accesskey="c" size="25" class="formu"  />
+
+    <label for="bai">
+    16) Bairro *
+    </label>
+    <input name="bai" type="text" id="bai" tabindex="16" accesskey="b" size="25" class="formu"  />
+
+    <label for="set">
+    17) CEP *
+    </label>
+    <input name="cep" type="text" id="cep" tabindex="17" accesskey="ce" size="25" class="formu"  />
+
+    <label for="cid">
+    18) Cidade *
+    </label>
+    <input name="cid" type="text" id="cid" tabindex="18" accesskey="ci" size="25" class="formu"  />
+
+    <label for="est">
+    19) Estado *
+    </label>
+    <input name="est" type="text" id="est" tabindex="19" accesskey="es" size="25" class="formu"  />
+
+    <label for="pais">
+    20) País *
+    </label>
+    <input name="pais" type="text" id="pais" tabindex="20" accesskey="pa" size="25" class="formu"  />
+
+    <label for="tc">
+    21) Telefone comercial *
+    </label>
+    <input name="tc_p" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tc_e" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tc_t" type="text" id="pais" tabindex="20" accesskey="pa" size="5" class="formu" /> (País-Estado-Telefone)
+
+    <label for="tr">
+    22) Telefone residencial *
+    </label>
+    <input name="tr_p" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tr_e" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tr_t" type="text" id="pais" tabindex="20" accesskey="pa" size="5" class="formu" /> (País-Estado-Telefone)
+
+    <label for="tf">
+    23) Telefone fax *
+    </label>
+    <input name="tf_p" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tf_e" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tf_t" type="text" id="pais" tabindex="20" accesskey="pa" size="5" class="formu" /> (País-Estado-Telefone)
+
+    <label for="tce">
+    24) Telefone celular *
+    </label>
+    <input name="tce_p" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tce_e" type="text" id="pais" tabindex="20" accesskey="pa" size="1" class="formu" />
+    <input name="tce_t" type="text" id="pais" tabindex="20" accesskey="pa" size="5" class="formu" /> (País-Estado-Telefone)
+
+    <label for="emc">
+    25) E-mail comercial *
+    </label>
+    <input name="emc" type="text" id="emc" tabindex="19" accesskey="es" size="25" class="formu"  />
+
+    <label for="emp">
+    26) E-mail pessoal *
+    </label>
+    <input name="emp" type="text" id="emp" tabindex="19" accesskey="es" size="25" class="formu"  /> <br />
+
+     <input type="submit" name="enviar" id="enviar"  value="Enviar"   />
+
+</fieldset>-->
+
+                <form id="forms" method="post" action="formulario.htm?flag=1" enctype="multipart/form-data">
+                                  <table align="center" border="0" cellpadding="3" cellspacing="1" width="100%">
+                                    <tbody><tr>
+                                      <td colspan="2" align="center" height="18">
+										<font color="#ff0000"><b>A sua inscrição
+										no 7º SENAED só terá validade se você
+										for associado à ABED.</b></font><span class="style1"><font color="#cc3300"><br>
+
+										</font><font style="font-size: 9pt;">* Campos de preenchimento obrigatório!
+										</font> </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left" height="25">
+                                        <span class="style1"><b>Informações
+                                          Pessoais </b> </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Tratamento
+                                        *</span></td>
+
+                                      <td align="left" width="70%" height="25"><span class="style1">
+                                        <select name="tratamento" size="1">
+                                          <option value="">Selecione</option>
+                                          <option value="Sr.">Sr.</option>
+                                          <option value="Sra.">Sra.</option>
+                                          <option value="Prof.">Prof.</option>
+                                          <option value="Profa.">Profa.</option>
+
+                                          <option value="Dr.">Dr.</option>
+                                          <option value="Dra.">Dra.</option>
+                                          <option value="Prof. Dr.">Prof. Dr.</option>
+                                          <option value="Profa. Dra.">Profa. Dra.</option>
+                                          <option value="Exmo. Sr.">Exmo. Sr.</option>
+                                          <option value="Exma. Sra.">Exma. Sra.</option>
+
+                                          <option value="Ilmo. Sr.">Ilmo. Sr.</option>
+                                          <option value="Ilma. Sra.">Ilma. Sra.</option>
+                                          <option value="Magnífico Reitor">Magnífico
+                                            Reitor</option>
+                                          <option value="Magnífica Reitora">Magnífica
+                                            Reitora</option>
+                                          <option value="Outros">Outros</option>
+                                        </select>
+
+                                      </span> </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Nome
+                                        completo *</span></td>
+                                      <td align="left" height="25">
+                                        <input name="nome" size="40" maxlength="255" type="text">                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">C.P.F.
+                                        *</span></td>
+
+                                      <td align="left" width="70%" height="25">
+                                        <input name="cpf" size="15" maxlength="11" onblur="ValidarCPF(this)" onkeyup="return autoTab(this,11,event);" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Documento
+                                        de identidade *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="doc" size="15" maxlength="255" type="text">
+                                        Tipo
+                                        <input name="doctipo" size="20" maxlength="255" type="text">
+
+                                        </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Formação
+                                        acadêmica *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="formacao" size="30" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="34"><span class="style1"> Nome da Empresa/ Instituição</span></td>
+
+                                      <td align="left" width="70%" height="34">
+                                        <input name="nomeemp" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Nome
+                                        Fantasia</span></td>
+                                      <td align="left" height="25">
+                                        <span class="style1">
+                                        <input name="nomefantasia" size="40" maxlength="255" type="text">
+                                        <br>
+
+                                        Campo
+                                        utilizado para identificar sua Empresa/
+                                        Instituição em crachás </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" height="25"><span class="style1">CNPJ</span></td>
+                                      <td align="left" height="25">
+                                        <input name="cnpj" id="cnpj" size="25" maxlength="255" type="text">                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Ramo
+                                        de Atividade</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="ramo" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Departamento</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="departamento" size="40" maxlength="255" type="text">                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Cargo</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="cargo" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" height="25"><span class="style1">Setor</span></td>
+                                      <td align="left" height="25"><span class="style1">
+
+                                        <select name="setor" size="1" id="setor">
+                                          <option value="">Selecione</option>
+                                          <option value="Pública">Pública</option>
+                                          <option value="Privada">Privada</option>
+                                          <option value="ONG">ONG</option>
+                                        </select>
+                                      </span> </td>
+
+                                    </tr>
+                                    <tr>
+                                      <td align="left" height="25"><span class="style1">Área
+                                        de Interesse</span></td>
+                                      <td align="left" height="25">
+                                        <span class="style1">
+                                        <input type="checkbox" name="int1" value="1">Educação média e fundamental<br />
+                                        <input type="checkbox" name="int2" value="2">Educação tecnológica / profissionalizante<br />
+                                        <input type="checkbox" name="int3" value="3">Educação Universitária<br />
+                                        <input type="checkbox" name="int4" value="4">Educação corporativa<br />
+
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td colspan="2" align="left" height="25">
+                                        <span class="style1"><b>Informações
+                                          para correspondência</b> </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left" height="25">
+
+
+                                          <span class="style1">
+                                          <input name="tipoendereco" value="Comercial" checked="checked" type="radio">
+                                          Comercial
+                                          <input name="tipoendereco" value="Residencial" type="radio">
+
+                                          Residencial                                      </span></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Endereço
+                                        *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="endereco" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" height="25"><span class="style1">N°
+                                        *</span></td>
+
+                                      <td align="left" height="25">
+                                        <input name="numero" size="7" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Complemento</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="complemento" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Bairro
+                                        *</span></td>
+
+                                      <td align="left" width="70%" height="25">
+                                        <input name="bairro" size="40" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">CEP
+                                        *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="cep" size="10" maxlength="255" type="text">
+                                        (XXXXX-XXX)</span></td>
+
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Cidade
+                                        *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="cidade" size="30" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Estado
+                                        *</span></td>
+                                      <td align="left" width="70%" height="25"><span class="style1">
+
+                                        <select name="uf" size="1">
+                                          <option value="">Selecione</option>
+                                          <option value="Exterior">Exterior</option>
+                                          <option value="AC">AC</option>
+                                          <option value="AL">AL</option>
+                                          <option value="AM">AM</option>
+
+                                          <option value="AP">AP</option>
+                                          <option value="BA">BA</option>
+                                          <option value="CE">CE</option>
+                                          <option value="DF">DF</option>
+                                          <option value="ES">ES</option>
+                                          <option value="GO">GO</option>
+
+                                          <option value="MA">MA</option>
+                                          <option value="MS">MS</option>
+                                          <option value="MT">MT</option>
+                                          <option value="MG">MG</option>
+                                          <option value="PA">PA</option>
+                                          <option value="PB">PB</option>
+
+                                          <option value="PE">PE</option>
+                                          <option value="PI">PI</option>
+                                          <option value="PR">PR</option>
+                                          <option value="RJ">RJ</option>
+                                          <option value="RN">RN</option>
+                                          <option value="RO">RO</option>
+
+                                          <option value="RR">RR</option>
+                                          <option value="RS">RS</option>
+                                          <option value="SC">SC</option>
+                                          <option value="SP">SP</option>
+                                          <option value="SE">SE</option>
+                                          <option value="TO">TO</option>
+
+                                        </select>
+                                      </span> </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">País
+                                        *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="pais" size="30" maxlength="255" type="text">                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Telefone
+                                        Comercial *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="telefonepaisemp" size="3" maxlength="255" type="text">
+                                        <input name="telefoneestadoemp" size="3" maxlength="255" type="text">
+                                        <input name="telefoneemp" size="15" maxlength="255" type="text">
+                                        [PAÍS] [ESTADO] [TELEFONE]</span></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Telefone
+                                        Residencial *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="telefonepais" size="3" maxlength="255" type="text">
+                                        <input name="telefoneestado" size="3" maxlength="255" type="text">
+                                        <input name="telefone" size="15" maxlength="255" type="text">
+                                        [PAÍS] [ESTADO] [TELEFONE]</span></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Fax
+                                        * </span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="faxpais" size="3" maxlength="255" type="text">
+                                        <input name="faxestado" size="3" maxlength="255" type="text">
+                                        <input name="fax" size="15" maxlength="255" type="text">
+                                        [PAÍS] [ESTADO] [FAX]</span></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">Celular
+                                        * </span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <span class="style1">
+                                        <input name="celularpais" size="3" maxlength="255" type="text">
+                                        <input name="celularestado" size="3" maxlength="255" type="text">
+                                        <input name="celular" size="15" maxlength="255" type="text">
+                                        [PAÍS] [ESTADO] [CELULAR]</span></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">E-mail
+                                        Comercial *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="emailemp" size="30" maxlength="255" type="text">                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" width="28%" height="25"><span class="style1">E-mail
+                                        pessoal *</span></td>
+                                      <td align="left" width="70%" height="25">
+                                        <input name="email" size="30" maxlength="255" type="text">                                        </td>
+
+                                    </tr>
+                                  </tbody></table>
+
+                               <br>
+
+                                <input value="Enviar os Dados" name="enviar" type="submit">
+                            </form>
+
+
+</div>
+</div>
+
+
+
+</body>
+
+</html>

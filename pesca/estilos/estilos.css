@@ -1,0 +1,84 @@
+/* Estilos Gerais atual*/
+/*html, body {margin: 0; padding: 0; font: normal 62.5% verdana; }
+#geral{ margin: 0; padding: 0;}
+#loader {position: absolute; width: 400px; height:21px; left:35%; top:45%; border: 1px solid #888888; background: #96E494; color: #FFFFFF; padding: 10px 10px; font-weight: bold; }
+*/
+
+body { font: normal 68.5% verdana; }
+
+ul.menubar{	margin: 0px;padding: 0px;  /* IE6 Bug */font-size: 100%; color: #552D00;}
+ul.menubar .submenu{margin: 0px;padding: 0px;list-style: none;border: 0px solid #ccc;float:left;}
+ul.menubar ul.menu{display: none;position: absolute;margin: 0px;}
+ul.menubar a{padding: 5px;display:block;text-decoration: none;color: #433412;padding: 5px;}
+ul.menu, ul.menu ul{margin: 0;padding: 0;border-bottom: 1px solid #ccc;width: 150px; /* Width of Menu Items */background-color: #FFFFFF; /* IE6 Bug */}
+ul.menu li{position: relative;list-style: none;border: 0px;}
+ul.menu li a{display: block;text-decoration: none;border: 1px solid #ccc;border-bottom: 0px;color: #433412;padding: 5px 10px 5px 5px;}
+ul.menu li sup{font-weight:bold;font-size:7px;color: red;}
+/* Fix IE. Hide from IE Mac \*/
+* html ul.menu li { float: left; height: 1%; }
+* html ul.menu li a { height: 1%; }
+/* End */
+ul.menu ul{position: absolute;display: none;left: 149px; /* Set 1px less than menu width */	top: 0px;}
+ul.menu li.submenu ul { display: none; } /* Hide sub-menus initially */
+ul.menu li.submenu { background: transparent url(arrow.gif) right center no-repeat; }
+ul.menu li a:hover { color: #433412; }
+
+
+/* Topo*/
+#titulo_geral { text-align: center; margin: 0; padding: 0px; width: 100%; color: #FFFFFF;	height: 30px;  background: url(../img/fundo.jpg) repeat-x left;  border: 1px solid #ccc;}
+
+#titulo_geral h3 { margin: 0; padding: 0; text-align: center; font-weight: bold;}
+
+#topo { text-align: left; margin: 0; padding: 0px; width: 100%; color: #FFFFFF;	height: 25px;  /*background: url(../img/fundo.jpg) repeat-x left;*/  border: 1px solid #ccc;}
+
+/* Estilos index */
+#conteudo { margin: 0 auto; width: 95%;  border: 1px solid #ccc;  margin-top: 10px;  text-align: left; }
+#conteudo fieldset {border:none; margin-left:20px;}
+#conteudo p {text-align: left; padding-left: 5px; }
+#conteudo h3 { margin: 0; padding: 0; text-align: left; padding: 3px; background: url(../img/fundo.jpg) repeat-x left; color: #FFFFFF; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold; font-size: 95%;}
+#conteudo fieldset { margin: 5px; padding: 3px; border: 1px solid #ccc;}
+#conteudo .linha_tit {  text-align: center; font-weight: bold; background: #0000CC; color:  #FFFFFF;}
+
+
+#conteudo1 { margin: 0 auto; width: 40%;  border: 1px solid #ccc;  margin-top: 10px;  text-align: left; background: #F7F7F7; }
+#conteudo1 h1 { margin: 0 auto; text-align: center; text-decoration: underline;}
+#conteudo1 p {text-align: left; padding-left: 5px; }
+#conteudo1 h3 { margin: 0; padding: 0; text-align: left; padding: 3px; background: url(../img/fundo.jpg) repeat-x left; color: #FFFFFF; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold; font-size: 95%; text-align: center; margin-top: 10px;}
+#conteudo1 fieldset { margin-left: 5px; padding: 3px; border: 5px solid #ccc;}
+#conteudo1 .linha_tit {  text-align: center; font-weight: bold; background: #BBBBBB; color: #660033;}
+
+/* Estilos tabelas */
+#tabelas { margin: 0 auto; width: 90%;  margin-top: 10px; text-align: center; padding: 5px; }
+/*#tabelas h3 { margin: 0; padding: 0; text-align: center; padding: 3px; background: url(../img/fundo.jpg) repeat-x left; color: #FFFFFF; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold; font-size: 95%;}*/
+#tabela {width: 100%; margin: auto auto;  margin-top: 10px;}
+
+table.bordasimples {border-collapse: collapse;}
+table.bordasimples tr td {border:1px solid #CCCCCC;}
+table tr.titulo { background: url(../img/fundo.jpg) repeat-x left; color: #ccc; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold;}
+table tr.titulo1 { background: url(../img/fundo.jpg) repeat-x left; color: #FFFFFF; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold; font-size: 85%;}
+
+/* Estilos index */
+#rodape { margin: 0 auto; margin-top: 10px; color: #AAAAAA; text-align: center; }
+
+/* Estilos menu */
+#menu ul { margin: 5px; padding: 0; }
+#menu ul li {list-style: none; padding:1px 5px; margin-bottom:2px; font-family: Verdana, Helvetica, Sans-serif; font-weight: bold; text-align: left; display: inline;}
+/*#menu li ul { position: absolute; left:-5px; top: 10px; display: none;}
+#menu ul li a {display: block; text-decoration: none;	color: #777; background: #fff; padding: 5px; border: 1px solid #ccc; border-bottom: 0;}*/
+#menu ul li a {color: #ffffff; text-decoration: none; }
+#menu ul li a:visited { color: #ffffcc; }
+#menu ul li a:hover { color: #990000; }
+
+/* FORMULARIOS E TABELAS  */
+#caixa1_1 fieldset {border:none; margin-left:150px; text-align: left;}
+#caixa1_1 label { display:block; font-weight:bold; margin-top:20px;}
+#caixa1_1 input { margin:0; padding:0; border:1px solid #616161; margin-left:0px; }
+#caixa1_1 select { border:1px solid #616161; }
+#caixa1_1 textarea { margin: 0; padding: 0; border:1px solid #616161; }
+#caixa1_1 input.checkbox { border:0px solid #616161; margin-right:10px; }
+#caixa1_1 input.botao2 {background: #D2DBE3;text-decoration:none; padding:1px 10px 1px 10px; border:1px solid #000; color:#616161; font-family: "Times New Roman", Times, serif; font-weight:bold; text-align: center; margin-left: 150px;}
+#botao1 { color: #FFFF33; text-align: center;}
+#botao1 a { text-align: center; text-decoration: none; color: #000000; font-weight: bold;}
+
+/* Estilos login */
+
