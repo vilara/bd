@@ -1,5 +1,6 @@
 <?php
 /*************************************************************************************
+
 **  CLASSE EM PHP QUE FAZ A CONEX�O COM O BANCO DE DADOS MYSQL VERS�O 1.0
 **  DATA DA CRIA��O: 03/01/2009
 **  DESENVOLVIDO POR: MARCELO MARTINS VILARA
@@ -51,6 +52,7 @@ abstract class mySqlConn1{
     $this->totalFields = mysql_num_rows($qr);
     return $this->totalFields;
   }
+
 
     
 }
