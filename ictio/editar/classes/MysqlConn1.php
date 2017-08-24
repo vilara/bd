@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 /*************************************************************************************
 
@@ -58,6 +59,8 @@ abstract class mySqlConn1{
     
 }
 =======
+=======
+>>>>>>> parent of 163197e... cach limpo
 <?php
 /*************************************************************************************
 **	CLASSE EM PHP QUE FAZ A CONEXÃO COM O BANCO DE DADOS MYSQL VERSÃO 1.0
@@ -114,5 +117,8 @@ abstract class mySqlConn1{
 
     
 }
+<<<<<<< HEAD
+>>>>>>> parent of 163197e... cach limpo
+=======
 >>>>>>> parent of 163197e... cach limpo
 ?>
